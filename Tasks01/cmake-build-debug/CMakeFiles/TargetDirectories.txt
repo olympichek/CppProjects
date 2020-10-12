@@ -1,0 +1,12 @@
+/home/olympichek/CppProjects/Tasks01/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/olympichek/CppProjects/Tasks01/cmake-build-debug/CMakeFiles/task08b.dir
+/home/olympichek/CppProjects/Tasks01/cmake-build-debug/CMakeFiles/task08a.dir
+/home/olympichek/CppProjects/Tasks01/cmake-build-debug/CMakeFiles/task07.dir
+/home/olympichek/CppProjects/Tasks01/cmake-build-debug/CMakeFiles/task06.dir
+/home/olympichek/CppProjects/Tasks01/cmake-build-debug/CMakeFiles/task05.dir
+/home/olympichek/CppProjects/Tasks01/cmake-build-debug/CMakeFiles/task04.dir
+/home/olympichek/CppProjects/Tasks01/cmake-build-debug/CMakeFiles/task03.dir
+/home/olympichek/CppProjects/Tasks01/cmake-build-debug/CMakeFiles/task02b.dir
+/home/olympichek/CppProjects/Tasks01/cmake-build-debug/CMakeFiles/task02a.dir
+/home/olympichek/CppProjects/Tasks01/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/olympichek/CppProjects/Tasks01/cmake-build-debug/CMakeFiles/task01.dir

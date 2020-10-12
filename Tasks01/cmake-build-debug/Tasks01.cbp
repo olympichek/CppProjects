@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Tasks01"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task08b">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task08b" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task08b"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task08b/fast">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task08b" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task08b/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task08a">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task08a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task08a"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task08a/fast">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task08a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task08a/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task07">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task07" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task07"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task07/fast">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task07" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task07/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task06">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task06" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task06"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task06/fast">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task06" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task06/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task05">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task05" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task05"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task05/fast">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task05" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task05/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task04">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task04" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task04"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task04/fast">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task04" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task04/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task03">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task03" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task03"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task03/fast">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task03" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task03/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task02b">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task02b" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task02b"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task02b/fast">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task02b" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task02b/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task02a">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task02a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task02a"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task02a/fast">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task02a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task02a/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task01">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task01"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task01/fast">
+				<Option output="/home/olympichek/CppProjects/Tasks01/cmake-build-debug/task01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/olympichek/CppProjects/Tasks01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 task01/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/olympichek/CppProjects/Tasks01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/olympichek/CppProjects/Tasks01/task01.cpp">
+			<Option target="task01"/>
+		</Unit>
+		<Unit filename="/home/olympichek/CppProjects/Tasks01/task02a.cpp">
+			<Option target="task02a"/>
+		</Unit>
+		<Unit filename="/home/olympichek/CppProjects/Tasks01/task02b.cpp">
+			<Option target="task02b"/>
+		</Unit>
+		<Unit filename="/home/olympichek/CppProjects/Tasks01/task03.cpp">
+			<Option target="task03"/>
+		</Unit>
+		<Unit filename="/home/olympichek/CppProjects/Tasks01/task04.cpp">
+			<Option target="task04"/>
+		</Unit>
+		<Unit filename="/home/olympichek/CppProjects/Tasks01/task05.cpp">
+			<Option target="task05"/>
+		</Unit>
+		<Unit filename="/home/olympichek/CppProjects/Tasks01/task06.cpp">
+			<Option target="task06"/>
+		</Unit>
+		<Unit filename="/home/olympichek/CppProjects/Tasks01/task07.cpp">
+			<Option target="task07"/>
+		</Unit>
+		<Unit filename="/home/olympichek/CppProjects/Tasks01/task08a.cpp">
+			<Option target="task08a"/>
+		</Unit>
+		<Unit filename="/home/olympichek/CppProjects/Tasks01/task08b.cpp">
+			<Option target="task08b"/>
+		</Unit>
+		<Unit filename="/home/olympichek/CppProjects/Tasks01/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

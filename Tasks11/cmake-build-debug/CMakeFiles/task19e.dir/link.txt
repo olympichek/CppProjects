@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/task19e.dir/task19e.cpp.o  -o task19e 
