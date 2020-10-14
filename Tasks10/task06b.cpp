@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    int a, b;
+    unsigned int a, b;
     cout << "Enter a and b: ";
     cin >> a >> b;
     cout << endl;
@@ -11,7 +11,7 @@ int main() {
         cout << "Operation can cause type overflow.";
     }
     else {
-        int res = a + b;
+        unsigned int res = a + b;
         cout << "a + b = " << res << endl;
     }
     return 0;

@@ -25,28 +25,28 @@ vector<Point> inputPolygon() {
     return polygon;
 }
 
-double countPolygonArea(vector<Point>* polygon) {
+double countPolygonArea(vector<Point> &polygon) {
     double S = 0.0;
-    int n = polygon->size();
+    int n = polygon.size();
     for(int i = 0; i < (n - 1); i++) {
-        S += polygon->at(i).x * polygon->at(i+1).y;
-        S -= polygon->at(i+1).x * polygon->at(i).y;
+        S += polygon.at(i).x * polygon.at(i+1).y;
+        S -= polygon.at(i+1).x * polygon.at(i).y;
     }
-    S += polygon->at(n-1).x * polygon->at(0).y;
-    S -= polygon->at(0).x * polygon->at(n-1).y;
+    S += polygon.at(n-1).x * polygon.at(0).y;
+    S -= polygon.at(0).x * polygon.at(n-1).y;
     S = abs(S)/2.0;
     return S;
 }
 
-double countTrianglesArea(vector<Point>* polygon, Point* point) {
+double countTrianglesArea(vector<Point> &polygon, Point &point) {
     double S = 0.0;
-    int n = polygon->size();
+    int n = polygon.size();
     for(int i = 0; i < (n - 1); i++) {
-        vector<Point> triangle = {polygon->at(i), polygon->at(i+1), *point};
-        S += countPolygonArea(&triangle);
+        vector<Point> triangle = {polygon.at(i), polygon.at(i+1), point};
+        S += countPolygonArea(triangle);
     }
-    vector<Point> triangle = {polygon->at(0), polygon->at(n-1), *point};
-    S += countPolygonArea(&triangle);
+    vector<Point> triangle = {polygon.at(0), polygon.at(n-1), point};
+    S += countPolygonArea(triangle);
     return S;
 }
 
@@ -63,8 +63,8 @@ void output(bool res) {
 int main() {
     Point point = inputPoint();
     vector<Point> polygon = inputPolygon();
-    double S1 = countPolygonArea(&polygon);
-    double S2 = countTrianglesArea(&polygon, &point);
+    double S1 = countPolygonArea(polygon);
+    double S2 = countTrianglesArea(polygon, point);
     bool res = check(S1, S2);
     output(res);
     return 0;
