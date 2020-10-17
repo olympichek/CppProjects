@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/task04b.dir/task04b.cpp.o  -o task04b 

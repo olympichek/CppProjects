@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/task08.dir/task08.cpp.o  -o task08 

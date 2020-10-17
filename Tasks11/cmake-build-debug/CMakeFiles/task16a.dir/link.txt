@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/task16a.dir/task16a.cpp.o  -o task16a 

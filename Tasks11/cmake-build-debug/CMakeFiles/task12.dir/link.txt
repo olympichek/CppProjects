@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/task12.dir/task12.cpp.o  -o task12 

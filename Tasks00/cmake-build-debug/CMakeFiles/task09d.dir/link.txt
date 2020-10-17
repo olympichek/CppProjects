@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/task09d.dir/task09d.cpp.o  -o task09d 

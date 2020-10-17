@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/task02c.dir/task02c.cpp.o  -o task02c 

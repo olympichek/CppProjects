@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/task07c.dir/task07c.cpp.o  -o task07c 
