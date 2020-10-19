@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named task38
+# Target rules for targets named task38l
 
 # Build rule for target.
-task38: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 task38
-.PHONY : task38
+task38l: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 task38l
+.PHONY : task38l
 
 # fast build rule for target.
-task38/fast:
-	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/build
-.PHONY : task38/fast
+task38l/fast:
+	$(MAKE) -f CMakeFiles/task38l.dir/build.make CMakeFiles/task38l.dir/build
+.PHONY : task38l/fast
+
+#=============================================================================
+# Target rules for targets named task38r
+
+# Build rule for target.
+task38r: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 task38r
+.PHONY : task38r
+
+# fast build rule for target.
+task38r/fast:
+	$(MAKE) -f CMakeFiles/task38r.dir/build.make CMakeFiles/task38r.dir/build
+.PHONY : task38r/fast
 
 #=============================================================================
 # Target rules for targets named task09c
@@ -1003,13 +1016,40 @@ task09c.cpp.s:
 	$(MAKE) -f CMakeFiles/task09c.dir/build.make CMakeFiles/task09c.dir/task09c.cpp.s
 .PHONY : task09c.cpp.s
 
+task38l.o: task38l.cpp.o
+
+.PHONY : task38l.o
+
+# target to build an object file
+task38l.cpp.o:
+	$(MAKE) -f CMakeFiles/task38l.dir/build.make CMakeFiles/task38l.dir/task38l.cpp.o
+.PHONY : task38l.cpp.o
+
+task38l.i: task38l.cpp.i
+
+.PHONY : task38l.i
+
+# target to preprocess a source file
+task38l.cpp.i:
+	$(MAKE) -f CMakeFiles/task38l.dir/build.make CMakeFiles/task38l.dir/task38l.cpp.i
+.PHONY : task38l.cpp.i
+
+task38l.s: task38l.cpp.s
+
+.PHONY : task38l.s
+
+# target to generate assembly for a file
+task38l.cpp.s:
+	$(MAKE) -f CMakeFiles/task38l.dir/build.make CMakeFiles/task38l.dir/task38l.cpp.s
+.PHONY : task38l.cpp.s
+
 task38r.o: task38r.cpp.o
 
 .PHONY : task38r.o
 
 # target to build an object file
 task38r.cpp.o:
-	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/task38r.cpp.o
+	$(MAKE) -f CMakeFiles/task38r.dir/build.make CMakeFiles/task38r.dir/task38r.cpp.o
 .PHONY : task38r.cpp.o
 
 task38r.i: task38r.cpp.i
@@ -1018,7 +1058,7 @@ task38r.i: task38r.cpp.i
 
 # target to preprocess a source file
 task38r.cpp.i:
-	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/task38r.cpp.i
+	$(MAKE) -f CMakeFiles/task38r.dir/build.make CMakeFiles/task38r.dir/task38r.cpp.i
 .PHONY : task38r.cpp.i
 
 task38r.s: task38r.cpp.s
@@ -1027,7 +1067,7 @@ task38r.s: task38r.cpp.s
 
 # target to generate assembly for a file
 task38r.cpp.s:
-	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/task38r.cpp.s
+	$(MAKE) -f CMakeFiles/task38r.dir/build.make CMakeFiles/task38r.dir/task38r.cpp.s
 .PHONY : task38r.cpp.s
 
 # Help Target
@@ -1036,7 +1076,8 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... task38"
+	@echo "... task38l"
+	@echo "... task38r"
 	@echo "... task09c"
 	@echo "... task06"
 	@echo "... task01"
@@ -1127,6 +1168,9 @@ help:
 	@echo "... task09c.o"
 	@echo "... task09c.i"
 	@echo "... task09c.s"
+	@echo "... task38l.o"
+	@echo "... task38l.i"
+	@echo "... task38l.s"
 	@echo "... task38r.o"
 	@echo "... task38r.i"
 	@echo "... task38r.s"

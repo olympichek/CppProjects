@@ -1,4 +1,5 @@
-/home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles/task38.dir
+/home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles/task38l.dir
+/home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles/task38r.dir
 /home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles/task09c.dir
 /home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles/task06.dir
 /home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles/task01.dir

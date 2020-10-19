@@ -53,7 +53,8 @@ CMAKE_BINARY_DIR = /home/olympichek/CppProjects/Tasks12/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/task38.dir/all
+all: CMakeFiles/task38l.dir/all
+all: CMakeFiles/task38r.dir/all
 all: CMakeFiles/task09c.dir/all
 all: CMakeFiles/task06.dir/all
 all: CMakeFiles/task01.dir/all
@@ -85,7 +86,8 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/task38.dir/clean
+clean: CMakeFiles/task38l.dir/clean
+clean: CMakeFiles/task38r.dir/clean
 clean: CMakeFiles/task09c.dir/clean
 clean: CMakeFiles/task06.dir/clean
 clean: CMakeFiles/task01.dir/clean
@@ -112,31 +114,58 @@ clean: CMakeFiles/task05b.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/task38.dir
+# Target rules for target CMakeFiles/task38l.dir
 
 # All Build rule for target.
-CMakeFiles/task38.dir/all:
-	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/depend
-	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target task38"
-.PHONY : CMakeFiles/task38.dir/all
+CMakeFiles/task38l.dir/all:
+	$(MAKE) -f CMakeFiles/task38l.dir/build.make CMakeFiles/task38l.dir/depend
+	$(MAKE) -f CMakeFiles/task38l.dir/build.make CMakeFiles/task38l.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target task38l"
+.PHONY : CMakeFiles/task38l.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/task38.dir/rule: cmake_check_build_system
+CMakeFiles/task38l.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/task38.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/task38l.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/task38.dir/rule
+.PHONY : CMakeFiles/task38l.dir/rule
 
 # Convenience name for target.
-task38: CMakeFiles/task38.dir/rule
+task38l: CMakeFiles/task38l.dir/rule
 
-.PHONY : task38
+.PHONY : task38l
 
 # clean rule for target.
-CMakeFiles/task38.dir/clean:
-	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/clean
-.PHONY : CMakeFiles/task38.dir/clean
+CMakeFiles/task38l.dir/clean:
+	$(MAKE) -f CMakeFiles/task38l.dir/build.make CMakeFiles/task38l.dir/clean
+.PHONY : CMakeFiles/task38l.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/task38r.dir
+
+# All Build rule for target.
+CMakeFiles/task38r.dir/all:
+	$(MAKE) -f CMakeFiles/task38r.dir/build.make CMakeFiles/task38r.dir/depend
+	$(MAKE) -f CMakeFiles/task38r.dir/build.make CMakeFiles/task38r.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles --progress-num=47,48 "Built target task38r"
+.PHONY : CMakeFiles/task38r.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/task38r.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/task38r.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/olympichek/CppProjects/Tasks12/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/task38r.dir/rule
+
+# Convenience name for target.
+task38r: CMakeFiles/task38r.dir/rule
+
+.PHONY : task38r
+
+# clean rule for target.
+CMakeFiles/task38r.dir/clean:
+	$(MAKE) -f CMakeFiles/task38r.dir/build.make CMakeFiles/task38r.dir/clean
+.PHONY : CMakeFiles/task38r.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/task09c.dir
