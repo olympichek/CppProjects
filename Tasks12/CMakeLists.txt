@@ -26,4 +26,4 @@ add_executable(task09a task09a.cpp)
 add_executable(task09b task09b.cpp)
 add_executable(task09c task09c.cpp)
 
-add_executable(task38 task38.cpp)
+add_executable(task38 task38r.cpp)

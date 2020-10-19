@@ -1003,32 +1003,32 @@ task09c.cpp.s:
 	$(MAKE) -f CMakeFiles/task09c.dir/build.make CMakeFiles/task09c.dir/task09c.cpp.s
 .PHONY : task09c.cpp.s
 
-task38.o: task38.cpp.o
+task38r.o: task38r.cpp.o
 
-.PHONY : task38.o
+.PHONY : task38r.o
 
 # target to build an object file
-task38.cpp.o:
-	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/task38.cpp.o
-.PHONY : task38.cpp.o
+task38r.cpp.o:
+	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/task38r.cpp.o
+.PHONY : task38r.cpp.o
 
-task38.i: task38.cpp.i
+task38r.i: task38r.cpp.i
 
-.PHONY : task38.i
+.PHONY : task38r.i
 
 # target to preprocess a source file
-task38.cpp.i:
-	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/task38.cpp.i
-.PHONY : task38.cpp.i
+task38r.cpp.i:
+	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/task38r.cpp.i
+.PHONY : task38r.cpp.i
 
-task38.s: task38.cpp.s
+task38r.s: task38r.cpp.s
 
-.PHONY : task38.s
+.PHONY : task38r.s
 
 # target to generate assembly for a file
-task38.cpp.s:
-	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/task38.cpp.s
-.PHONY : task38.cpp.s
+task38r.cpp.s:
+	$(MAKE) -f CMakeFiles/task38.dir/build.make CMakeFiles/task38.dir/task38r.cpp.s
+.PHONY : task38r.cpp.s
 
 # Help Target
 help:
@@ -1127,9 +1127,9 @@ help:
 	@echo "... task09c.o"
 	@echo "... task09c.i"
 	@echo "... task09c.s"
-	@echo "... task38.o"
-	@echo "... task38.i"
-	@echo "... task38.s"
+	@echo "... task38r.o"
+	@echo "... task38r.i"
+	@echo "... task38r.s"
 .PHONY : help
 
 
