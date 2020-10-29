@@ -12,7 +12,7 @@ int main() {
     }
     k1 = k - r + n*t;
     x = (t/9) + (k1 - 1)/n;
-    i = n - ( (k1 - 1)%n );
+    i = n - ( (k1 - 1) % n );
     while(i > 0) {
         res = x % 10;
         x /= 10;
