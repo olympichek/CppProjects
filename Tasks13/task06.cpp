@@ -8,7 +8,7 @@ int main() {
     cin >> n;
     left = n >> 8u;
     right = n - (left << 8u);
-    res= (right << 8u) | left;
+    res = (right << 8u) | left;
     cout << "res(decimal): " << res << endl;
     cout << hex;
     cout << "res(hexadecimal): " << res << endl;
