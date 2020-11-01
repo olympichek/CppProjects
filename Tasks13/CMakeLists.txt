@@ -12,8 +12,10 @@ add_executable(task06 task06.cpp)
 add_executable(task07 task07.cpp)
 add_executable(task08 task08.cpp)
 add_executable(task09 task09.cpp)
+
 add_executable(task10a task10a.cpp)
 add_executable(task10b task10b.cpp)
+add_executable(task10c task10c.cpp)
 
 add_executable(task19a task19a.cpp)
 add_executable(task19b task19b.cpp)
