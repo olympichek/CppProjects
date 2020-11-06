@@ -73,11 +73,11 @@ Array64 Array8ToArray64(const Array8 &arr8, unsigned k) {
     Array64 arr64 {};
     arr64.length = (arr8.length * 8)/k;
     unsigned nulls, last = arr8.numbers[arr8.length-1];
-    if(last == 0)
-        nulls = 8;
-    else
+    if(last != 0)
         for(nulls = 0; last % 2 == 0; nulls++)
             last /= 2;
+    else
+        nulls = 8;
     arr64.length -= nulls/k;
     arr64.numbers = new uint64_t[arr64.length];
     unsigned bitIndex = 0;

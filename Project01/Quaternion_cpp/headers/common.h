@@ -1,8 +1,8 @@
-//
-// Created by olymp on 03.11.2020.
-//
+#ifndef COMMON
+#define COMMON
 
-#ifndef QUATERNION_CPP_COMMON_H
-#define QUATERNION_CPP_COMMON_H
+typedef double DType; //Double real type for application
+typedef int IType; //Integer type for application
+typedef unsigned NType; //Unsigned type for application
 
-#endif //QUATERNION_CPP_COMMON_H
+#endif //COMMON
