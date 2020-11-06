@@ -3,30 +3,48 @@
 using namespace std;
 
 int sign(double x) {
-    if(x > 0.0) return 1;
-    if(x < 0.0) return -1;
+    if(x > 0.0)
+        return 1;
+    if(x < 0.0)
+        return -1;
     return 0;
 }
 
-double bisection(double xn, double xk, double eps, double f(double)) {
-    if(f(xn) == 0.0) return xn;
-    if(f(xk) == 0.0) return xk;
+int bisection(double xn, double xk, double eps, double f(double), double &res) {
+    if( abs(f(xn)) <= eps ) {
+        res =  xn;
+        return 0;
+    }
+    if( abs(f(xk)) <= eps ) {
+        res =  xk;
+        return 0;
+    }
     double dx, xi;
-    while((xk - xn) > eps) {
+    while( (xk - xn) > (eps/10.0) ) {
         dx = (xk - xn)/2.0;
         xi = xn + dx;
-        if(sign(f(xn)) != sign(f(xi))) xk = xi;
-        else xn = xi;
+        if( sign(f(xn)) != sign(f(xi)) )
+            xk = xi;
+        else
+            xn = xi;
     }
-    return xi;
+    if( abs(f(xi)) <= eps ) {
+        res = xi;
+        return 0;
+    }
+    return 1;
 }
 
 int main() {
-    double eps, xn = 2.0, xk = 5.0;
-    cout << "Enter eps: "; cin >> eps;
-    double res = bisection(xn, xk, eps, [](double x) {
+    double eps, xn = 0.001, xk = 1.5, res;
+    cout << "Enter eps: ";
+    cin >> eps;
+    int status = bisection(xn, xk, eps, [](double x) {
         return tan(x) - x;
-    });
-    cout << "x = " << res << endl;
+    }, res);
+    if(status == 0)
+        cout << "x = " << res << endl;
+    else
+        cout << "no x on this interval" << endl;
     return 0;
 }
