@@ -15,7 +15,7 @@ Matrix<bool> in() {
     return matrix;
 }
 
-unsigned calc(Matrix<bool> &matrix) {
+unsigned calc(const Matrix<bool> &matrix) {
     unsigned max = 0;
     for(unsigned i0 = 0; i0 < matrix.rows(); i0++) {
         for(unsigned j0 = 0; j0 < matrix.columns(); j0++) {
