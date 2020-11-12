@@ -1,8 +1,6 @@
 #ifndef MATRIX
 #define MATRIX
 
-#include <iostream>
-
 template<class Type>
 class Matrix {
 private:
