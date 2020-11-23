@@ -11,7 +11,6 @@ add_executable(random_test
         headers/common.h
         headers/random.h
 )
-target_link_libraries(random_test m)
 
 add_executable(variation_search
         tests/variation_search.c
@@ -19,4 +18,8 @@ add_executable(variation_search
         headers/common.h
         headers/random.h
 )
-target_link_libraries(variation_search m)
+
+IF(NOT WIN32)
+        target_link_libraries(random_test m)
+        target_link_libraries(variation_search m)
+ENDIF()
