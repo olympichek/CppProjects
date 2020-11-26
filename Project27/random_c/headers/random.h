@@ -10,9 +10,9 @@
  * @param a0 is multiplier
  * @param c0 is increment
  * @param m0 is modulus
- * @param s0 is first number in a sequense 
+ * @param s0 is first number in a sequence
  * @return
- *   0 if sucess
+ *   0 if success
  *   1 if wrong m
  *   2 if wrong a
  *   3 if wrong c
@@ -23,8 +23,8 @@ int my_srand_custom(NType a0, NType c0, NType m0, NType s0);
 /**
  * Initializes random numbers generator with constant a, c and m, 
  * but with s0 defined by user, like srand() function from stdlib.h
- * @param s0 is first number in a sequense 
- * @return 0 if sucess
+ * @param s0 is first number in a sequence
+ * @return 0 if success
  */
 int my_srand_basic(NType s0);
 
@@ -36,20 +36,20 @@ int my_srand_basic(NType s0);
 int my_srand();
 
 /**
- * Genrates random int from 0 to m,
+ * Generates random int from 0 to m,
  * as rand() function from stdlib.h
  * @return random int
  */
 NType my_rand_int_basic();
 
 /**
- * Genrates random double from 0 to 1
+ * Generates random double from 0 to 1
  * @return random double
  */
 DType my_rand_double_basic();
 
 /**
- * Genrates random int from min to max
+ * Generates random int from min to max
  * @param min is minimal number
  * @param max is maximal number
  * @return random int
@@ -57,7 +57,7 @@ DType my_rand_double_basic();
 IType my_rand_int(IType min, IType max);
 
 /**
- * Genrates random double from min to max
+ * Generates random double from min to max
  * @param min is minimal number
  * @param max is maximal number
  * @return random double

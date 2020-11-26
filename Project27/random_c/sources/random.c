@@ -17,7 +17,7 @@ static NType sn = 0;
 // 0 <= s0 <= m - 1
 
 // srand functions return:
-// 0 if sucess
+// 0 if success
 // 1 if wrong m
 // 2 if wrong a
 // 3 if wrong c
@@ -34,7 +34,7 @@ int my_srand_custom(NType a0, NType c0, NType m0, NType s0) {
     // sqrt(m) < a < m - sqrt(m)
 
     if ( (c0 % 2) != 1 )
-        return 3; // c shold be odd
+        return 3; // c should be odd
 
     if ( s0 > (m0 - 1) ) 
         return 4; // 0 <= s0 <= m - 1
@@ -48,9 +48,9 @@ int my_srand_custom(NType a0, NType c0, NType m0, NType s0) {
 // init with constant a, c and m but with custom s0,
 // like srand() function from stdlib.h
 int my_srand_basic(NType s0) {
-    NType m0 = 1 << 31; // 2 ^ 31
-    NType a0 = 1103515245;
-    NType c0 = 12345;
+    const NType m0 = 1 << 31; // 2 ^ 31
+    const NType a0 = 1103515245;
+    const NType c0 = 12345;
     s0 = s0 % m0;
     int error = my_srand_custom(a0, c0 , m0, s0);
     return error;

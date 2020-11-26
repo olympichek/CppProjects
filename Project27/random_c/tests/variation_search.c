@@ -70,8 +70,8 @@ int main() {
     printf("Enter number of random numbers:\n");
     scanf("%u", &n);
 
-    char filename[BUFSIZ]; // file name
-    printf("Enter file name:\n");
+    char filename[BUFSIZ]; // file's name
+    printf("Enter output file's name:\n");
     scanf("%s", filename);
 
     error = write_numbers(n, filename);
