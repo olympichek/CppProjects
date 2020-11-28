@@ -8,14 +8,17 @@
  * Generates random numbers and writes them to file
  * @param n is amount of random numbers
  * @param filename is output file's name
- * @throws std::invalid_argument
+ * @throws std::invalid_argument, std::ios_base::failure
  */
 void write_numbers(NType n, const std::string &filename) {
     std::ofstream fout(filename); // try to open file to write
+    if (fout.fail())
+        throw std::ios_base::failure("Unable to open or create file...");
 
     try {
         my::srand(); // generator init
-    } catch (std::invalid_argument &e) {
+    }
+    catch (std::invalid_argument &e) {
         throw e;
     }
 
@@ -33,12 +36,15 @@ void write_numbers(NType n, const std::string &filename) {
  * @param filename is input file's name
  * @param m is number of intervals
  * @return array of counts of numbers in each interval
+ * @throws std::ios_base::failure
  */
 std::vector<NType> count_numbers(NType n, const std::string &filename, NType m) {
     std::vector<NType> counts(m);
     // array of counts of numbers in each interval
 
     std::ifstream fin(filename); // try to open file to read
+    if (fin.fail())
+        throw std::ios_base::failure("Unable to read file...");
 
     for (NType i = 0; i < n; i++) {
         DType rd;
@@ -75,7 +81,8 @@ int main() {
     try {
         write_numbers(n, filename);
         // write random numbers to file
-    } catch (std::invalid_argument &e) {
+    }
+    catch (std::exception &e) {
         std::cout << e.what() << std::endl;
         return 1;
     }
@@ -86,8 +93,15 @@ int main() {
     std::cout << "Enter number of intervals:" << std::endl;
     std::cin >> m;
 
-    std::vector<NType> counts = count_numbers(n, filename, m);
-    // count numbers in each interval
+    std::vector<NType> counts;
+    try {
+        counts = count_numbers(n, filename, m);
+        // count numbers in each interval
+    }
+    catch (std::exception &e) {
+        std::cout << e.what() << std::endl;
+        return 1;
+    }
 
     for (NType i = 0; i < m; i++) { 
         std::cout << "Numbers in " << (i + 1) << " interval: " << counts[i] << std::endl;

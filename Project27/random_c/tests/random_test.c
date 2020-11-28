@@ -90,7 +90,7 @@ void file_io_tests() {
     // checking wrong initialization arguments
 
     fprintf(fout, "%u random numbers: \n", n1);
-    for(NType i = 0; i < n1; i++) {
+    for (NType i = 0; i < n1; i++) {
         fprintf(fout, "%u\n", my_rand_int_basic());
     }
     // write random int numbers from 0 to m
@@ -98,25 +98,22 @@ void file_io_tests() {
     fprintf(fout, "\n");
     
     fprintf(fout, "%u random double numbers from 0 to 1: \n", n2);
-    for(NType i = 0; i < n2; i++) {
+    for (NType i = 0; i < n2; i++)
         fprintf(fout, "%lf\n", my_rand_double_basic());
-    }
     // write random double numbers from 0 to 1
 
     fprintf(fout, "\n");
     
     fprintf(fout, "%u random int numbers from %d to %d: \n", n3, min1, max1);
-    for(NType i = 0; i < n3; i++) {
+    for (NType i = 0; i < n3; i++)
         fprintf(fout, "%d\n", my_rand_int(min1, max1));
-    }
     // write random int numbers from min to max
 
     fprintf(fout, "\n");
 
     fprintf(fout, "%u random double numbers from %lf to %lf: \n", n4, min2, max2);
-    for(NType i = 0; i < n4; i++) {
+    for (NType i = 0; i < n4; i++)
         fprintf(fout, "%lf\n", my_rand_double(min2, max2));
-    }
     // write random double numbers from min to max
 
     fclose(fout); // close output file
@@ -178,7 +175,7 @@ void command_line_io_tests() {
     NType c1;
     scanf("%u", &c1);
     printf("%u random integer numbers:\n", c1);
-    for(NType i = 0; i < c1; i++)
+    for (NType i = 0; i < c1; i++)
         printf("%u\n", my_rand_int_basic());
     // write random int numbers from 0 to m
 
@@ -188,7 +185,7 @@ void command_line_io_tests() {
     NType c2;
     scanf("%u", &c2);
     printf("%u random double numbers:\n", c2);
-    for(NType i = 0; i < c2; i++)
+    for (NType i = 0; i < c2; i++)
         printf("%lf\n", my_rand_double_basic());
     // write random double numbers from 0 to 1
 
@@ -201,7 +198,7 @@ void command_line_io_tests() {
     IType min1, max1;
     scanf("%d %d", &min1, &max1);
     printf("%u random integer numbers:\n", c3);
-    for(NType i = 0; i < c3; i++)
+    for (NType i = 0; i < c3; i++)
         printf("%d\n", my_rand_int(min1, max1));
     // write random int numbers from min to max
 
@@ -214,7 +211,7 @@ void command_line_io_tests() {
     DType min2, max2;
     scanf("%lf %lf", &min2, &max2);
     printf("%u random double numbers:\n", c4);
-    for(NType i = 0; i < c4; i++)
+    for (NType i = 0; i < c4; i++)
         printf("%lf\n", my_rand_double(min2, max2));
     // write random double numbers from min to max
 }

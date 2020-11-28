@@ -33,8 +33,13 @@ void file_io_tests() {
     // prompt input file's name
 
     std::ifstream fin(input_file);
-
-    printf("\n");
+    if (fin.fail()) {
+       std::cout << "Unable to read file..." << std::endl;
+       return;
+    }
+    else {
+        std::cout << std::endl;
+    }
 
     NType a, c, m, s0;
     fin >> a >> c >> m >> s0;
@@ -58,8 +63,13 @@ void file_io_tests() {
     // prompt output file's name
     
     std::ofstream fout(output_file);
-
-    printf("\n");
+    if (fout.fail()) {
+        std::cout << "Unable to open or create file..." << std::endl;
+        return;
+    }
+    else {
+        std::cout << std::endl;
+    }
 
     try {
         my::srand_custom(a, c, m, s0);
@@ -72,33 +82,29 @@ void file_io_tests() {
     // checking wrong initialization arguments
 
     fout << n1 << " random numbers: " << std::endl;
-    for(NType i = 0; i < n1; i++) {
+    for (NType i = 0; i < n1; i++)
         fout << my::rand_int_basic() << std::endl;
-    }
     // write random int numbers from 0 to m
 
     fout << std::endl;
     
     fout << n2 << " random double numbers from 0 to 1: " << std::endl;
-    for(NType i = 0; i < n2; i++) {
+    for (NType i = 0; i < n2; i++)
         fout << my::rand_double_basic() << std::endl;
-    }
     // write random double numbers from 0 to 1
 
     fout << std::endl;
     
     fout << n3 << " random int numbers from " << min1 << " to " << max1 << ": " << std::endl;
-    for(NType i = 0; i < n3; i++) {
+    for (NType i = 0; i < n3; i++)
         fout << my::rand_int(min1, max1) << std::endl;
-    }
     // write random int numbers from min to max
 
     fout << std::endl;
 
     fout << n4 << " random double numbers from " << min2 << " to " << max2 << ": " << std::endl;
-    for(NType i = 0; i < n4; i++) {
+    for (NType i = 0; i < n4; i++)
         fout << my::rand_double(min2, max2) << std::endl;
-    }
     // write random double numbers from min to max
 
     fout.close(); // close output file
@@ -111,87 +117,93 @@ void file_io_tests() {
  * functions using command line IO
  */
 void command_line_io_tests() {
-    printf("Do you want to set custom a, c and m or use default ones? (1 - custom, 2 - default): ");
+    std::cout << "Do you want to set custom a, c and m or use default ones? (1 - custom, 2 - default): ";
     int parameters_type;
-    scanf("%d", &parameters_type);
+    std::cin >> parameters_type;
     // prompt parameters type
 
-    if (parameters_type == 1) { // custom a, c, m and s0
-        NType a, c, m , s0;
-        printf("Enter a, c, m and s0: ");
-        scanf("%u %u %u %u", &a, &c, &m, &s0);
-        // prompt a, c, m and s0
-        my::srand_custom(a, c, m, s0);
-    }
-    else if (parameters_type == 2) { // default a, c and m
-        printf("Do you want to set custom s0 or use current time as s0? (1 - custom, 2 - time): ");
-        int s0_type;
-        scanf("%d", &s0_type);
-        // prompt s0 type
-        if (s0_type == 1) { // custom s0
-            printf("Enter s0: ");
-            NType s0;
-            scanf("%u", &s0);
-            // prompt s0
-            my::srand_basic(s0);
+    try {
+        if (parameters_type == 1) { // custom a, c, m and s0
+            NType a, c, m , s0;
+            std::cout << "Enter a, c, m and s0: ";
+            std::cin >> a >> c >> m >> s0;
+            // prompt a, c, m and s0
+            my::srand_custom(a, c, m, s0);
         }
-        else if (s0_type == 2) { // time(NULL) as s0
-            my::srand();
+        else if (parameters_type == 2) { // default a, c and m
+            std::cout << "Do you want to set custom s0 or use current time as s0? (1 - custom, 2 - time): ";
+            int s0_type;
+            std::cin >> s0_type;
+            // prompt s0 type
+            if (s0_type == 1) { // custom s0
+                std::cout << "Enter s0: ";
+                NType s0;
+                std::cin >> s0;
+                // prompt s0
+                my::srand_basic(s0);
+            }
+            else if (s0_type == 2) { // time(NULL) as s0
+                my::srand();
+            }
+            else {
+                std::cout << "Wrong s0 type..." << std::endl;
+                return;
+            }
         }
         else {
-            printf("Wrong s0 type...\n");
+            std::cout << "Wrong arguments type..." << std::endl;
             return;
         }
     }
-    else {
-        printf("Wrong arguments type...\n");
+    catch (std::invalid_argument &e) {
+        std::cout << e.what() << std::endl;
         return;
     }
 
-    printf("\n");
+    std::cout << std::endl;
 
-    printf("Enter number of random integer numbers: ");
+    std::cout << "Enter number of random integer numbers: ";
     NType c1;
-    scanf("%u", &c1);
-    printf("%u random integer numbers:\n", c1);
-    for(NType i = 0; i < c1; i++)
-        printf("%u\n", my::rand_int_basic());
+    std::cin >> c1;
+    std::cout << c1 << " random integer numbers:" << std::endl;
+    for (NType i = 0; i < c1; i++)
+        std::cout << my::rand_int_basic() << std::endl;
     // write random int numbers from 0 to m
 
-    printf("\n");
+    std::cout << std::endl;
 
-    printf("Enter number of random double numbers: ");
+    std::cout << "Enter number of random double numbers: ";
     NType c2;
-    scanf("%u", &c2);
-    printf("%u random double numbers:\n", c2);
-    for(NType i = 0; i < c2; i++)
-        printf("%lf\n", my::rand_double_basic());
+    std::cin >> c2;
+    std::cout << c2 << " random double numbers:" << std::endl;
+    for (NType i = 0; i < c2; i++)
+        std::cout << my::rand_double_basic() << std::endl;
     // write random double numbers from 0 to 1
 
-    printf("\n");
+    std::cout << std::endl;
 
-    printf("Enter number of random integer numbers: ");
+    std::cout << "Enter number of random integer numbers: ";
     NType c3;
-    scanf("%u", &c3);
-    printf("Enter minimal and maximal number: ");
+    std::cin >> c3;
+    std::cout << "Enter minimal and maximal number: ";
     IType min1, max1;
-    scanf("%d %d", &min1, &max1);
-    printf("%u random integer numbers:\n", c3);
-    for(NType i = 0; i < c3; i++)
-        printf("%d\n", my::rand_int(min1, max1));
+    std::cin >> min1 >> max1;
+    std::cout << c3 << " random integer numbers:" << std::endl;
+    for (NType i = 0; i < c3; i++)
+        std::cout << my::rand_int(min1, max1) << std::endl;
     // write random int numbers from min to max
 
-    printf("\n");
+    std::cout << std::endl;
 
-    printf("Enter number of random double numbers: ");
+    std::cout << "Enter number of random double numbers: ";
     NType c4;
-    scanf("%u", &c4);
-    printf("Enter minimal and maximal number: ");
+    std::cin >> c4;
+    std::cout << "Enter minimal and maximal number: ";
     DType min2, max2;
-    scanf("%lf %lf", &min2, &max2);
-    printf("%u random double numbers:\n", c4);
-    for(NType i = 0; i < c4; i++)
-        printf("%lf\n", my::rand_double(min2, max2));
+    std::cin >> min2 >> max2;
+    std::cout << c4 << " random double numbers:" << std::endl;
+    for (NType i = 0; i < c4; i++)
+        std::cout << my::rand_double(min2, max2) << std::endl;
     // write random double numbers from min to max
 }
 
@@ -200,22 +212,25 @@ void command_line_io_tests() {
  * @return 0 if success, 1 if error
  */
 int main() {
-    printf("Random numbers generator test\n\n");
+    std::ios_base::sync_with_stdio(false);
+    // disable synchronization with stdio for higher speed
 
-    printf("Choose IO type (1 - file IO, 2 - command line IO): ");
+    std::cout << "Random numbers generator test" << std::endl << std::endl;
+
+    std::cout << "Choose IO type (1 - file IO, 2 - command line IO): ";
     int io_type;
-    scanf("%d", &io_type);
+    std::cin >> io_type;
     // prompt IO type
 
     if (io_type == 1) { // file IO
-        printf("\n");
+        std::cout << std::endl;
         file_io_tests();
     }
     else if (io_type == 2) { // command line IO
         command_line_io_tests();
     }
     else {
-        printf("Wrong io type...\n");
+        std::cout << "Wrong io type..." << std::endl;
     }
 
     return 0;
