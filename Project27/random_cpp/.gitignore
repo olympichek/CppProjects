@@ -1,0 +1,8 @@
+.cache
+.idea
+.theia
+.vscode
+.vs
+build
+cmake-build-debug
+out

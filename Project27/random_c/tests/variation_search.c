@@ -51,7 +51,7 @@ int count_numbers(NType n, char *filename, NType m,  NType *counts) {
         while (( (1.0 / m) * in ) < rd) in++;
         // find interval in which the number lies
         
-        counts[in - 1]++; 
+        counts[in - 1]++;
         // increment count of numbers in this interval
     }
 
@@ -110,7 +110,7 @@ int main() {
     }
 
     for (NType i = 0; i < m; i++) { 
-        printf("Numbers in %u inerval: %u\n", (i + 1), counts[i]);
+        printf("Numbers in %u interval: %u\n", (i + 1), counts[i]);
         // print counts of numbers in each interval
     }
 

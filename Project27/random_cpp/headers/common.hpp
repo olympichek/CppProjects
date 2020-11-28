@@ -1,7 +1,7 @@
-#ifndef COMMON_H
-#define COMMON_H
+#ifndef COMMON
+#define COMMON
 
-#include <limits.h> // min and max values
+#include <climits> // min and max values
 
 typedef double DType; // double type for application
 
@@ -12,4 +12,4 @@ typedef int IType; // integer type for application
 typedef unsigned NType; // unsigned type for application
 #define NTYPE_MAX UINT_MAX // unsigned maximum value
 
-#endif //COMMON_H
+#endif //COMMON

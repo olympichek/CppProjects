@@ -1,5 +1,5 @@
-#ifndef RANDOM
-#define RANDOM
+#ifndef RANDOM_H
+#define RANDOM_H
 
 #include <math.h> // sqrt() function
 #include <time.h> // time() function
@@ -21,7 +21,7 @@
 int my_srand_custom(NType a0, NType c0, NType m0, NType s0);
 
 /**
- * Initializes random numbers generator with constant a, c and m, 
+ * Initializes random numbers generator with constant a, c and m
  * but with s0 defined by user, like srand() function from stdlib.h
  * @param s0 is first number in a sequence
  * @return 0 if success
@@ -29,7 +29,7 @@ int my_srand_custom(NType a0, NType c0, NType m0, NType s0);
 int my_srand_basic(NType s0);
 
 /**
- * Initializes random numbers generator with constant a, c and m, 
+ * Initializes random numbers generator with constant a, c and m
  * and with different s0 on each launch ( s0 = time(NULL) )
  * @return 0 if sucess
  */
@@ -64,4 +64,4 @@ IType my_rand_int(IType min, IType max);
  */
 DType my_rand_double(DType min, DType max);
 
-#endif //RANDOM
+#endif //RANDOM_H
