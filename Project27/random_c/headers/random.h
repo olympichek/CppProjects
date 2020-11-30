@@ -5,6 +5,11 @@
 #include <time.h> // time() function
 #include "common.h" // application types
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+// for right linking when included from C++
+
 /**
  * Initializes random numbers generator with all parametres defined by user
  * @param a0 is multiplier
@@ -63,5 +68,10 @@ IType my_rand_int(IType min, IType max);
  * @return random double
  */
 DType my_rand_double(DType min, DType max);
+
+#ifdef __cplusplus
+}
+#endif
+// for right linking when included from C++
 
 #endif //RANDOM_H

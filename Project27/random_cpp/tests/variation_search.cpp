@@ -106,7 +106,9 @@ int main() {
     }
 
     for (NType i = 0; i < m; i++) { 
-        std::cout << "Numbers in " << (i + 1) << " interval: " << counts[i] << std::endl;
+        std::cout << "Numbers in " << (i + 1)
+                  << " interval: " << counts[i]
+                  << std::endl;
         // print counts of numbers in each interval
     }
 
