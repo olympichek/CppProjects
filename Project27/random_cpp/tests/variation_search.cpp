@@ -1,6 +1,8 @@
-#include <iostream> // base IO
-#include <fstream> // file IO
-#include <vector> // vector template
+#include <string> // std::string
+#include <iostream> // base IO streams
+#include <fstream> // file IO streams
+#include <vector> // std::vector template
+
 #include "common.hpp" // application types
 #include "random.hpp" // random numbers generator
 

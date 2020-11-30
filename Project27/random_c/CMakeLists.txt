@@ -3,20 +3,16 @@ project(random_c)
 
 set(CMAKE_C_STANDARD 99)
 
-include_directories(sources headers tests)
+include_directories(headers)
 
 add_executable(random_test
         tests/random_test.c
         sources/random.c
-        headers/common.h
-        headers/random.h
 )
 
 add_executable(variation_search
         tests/variation_search.c
         sources/random.c
-        headers/common.h
-        headers/random.h
 )
 
 IF(NOT WIN32)

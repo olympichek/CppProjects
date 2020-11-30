@@ -1,5 +1,7 @@
-#include <iostream> // base IO
-#include <fstream> // file IO
+#include <string> // std::string
+#include <iostream> // base IO streams
+#include <fstream> // file IO streams
+
 #include "common.hpp" // application types
 #include "random.hpp" // random numbers generator
 
