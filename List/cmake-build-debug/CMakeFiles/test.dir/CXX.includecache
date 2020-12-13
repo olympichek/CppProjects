@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../headers/list.hpp
+string
+-
+sstream
+-
+
+/home/olympichek/Task01/tests/test.cpp
+iostream
+-
+algorithm
+-
+list.hpp
+/home/olympichek/Task01/tests/list.hpp
+
