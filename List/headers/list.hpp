@@ -11,8 +11,8 @@ namespace my {
     private:
         struct list_node {
             type value;
-            list_node *next;
-            list_node *prev;
+            list_node* next;
+            list_node* prev;
             explicit list_node(const type &value):
             value(value), next(nullptr), prev(nullptr) {};
             ~list_node() {
@@ -21,16 +21,16 @@ namespace my {
         };
 
         std::size_t length;
-        list_node *first;
-        list_node *last;
+        list_node* first;
+        list_node* last;
 
     public:
         list():
         first(nullptr), last(nullptr), length(0) {}
 
-        list(std::initializer_list<type> list):
+        list(std::initializer_list<type> init):
         first(nullptr), last(nullptr), length(0) {
-            for (auto &it : list)
+            for(auto &it : init)
                 push_back(it);
         }
 
@@ -47,11 +47,11 @@ namespace my {
         }
 
         void push_back(const type &value) {
-            auto *node = new list_node(value);
-            if (first == nullptr) {
+            auto* node = new list_node(value);
+            if(first == nullptr) {
                 first = node;
             }
-            else if (last == nullptr) {
+            else if(last == nullptr) {
                 first->next = node;
                 last = node;
                 last->prev = first;
@@ -65,11 +65,11 @@ namespace my {
         }
 
         void push_top(const type &value) {
-            auto *node = new list_node(value);
-            if (first == nullptr) {
+            auto* node = new list_node(value);
+            if(first == nullptr) {
                 first = node;
             }
-            else if (last == nullptr) {
+            else if(last == nullptr) {
                 last = first;
                 first = node;
                 first->next = last;
@@ -84,12 +84,12 @@ namespace my {
         }
 
         void pop_back() {
-            if (first != nullptr) {
-                if (last == nullptr) {
+            if(first != nullptr) {
+                if(last == nullptr) {
                     delete first;
                 }
                 else {
-                    list_node *node = last;
+                    list_node* node = last;
                     last = last->prev;
                     last->next = nullptr;
                     node->prev = nullptr;
@@ -100,12 +100,12 @@ namespace my {
         }
 
         void pop_top() {
-            if (first != nullptr) {
-                if (last == nullptr) {
+            if(first != nullptr) {
+                if(last == nullptr) {
                     delete first;
                 }
                 else {
-                    list_node *node = first;
+                    list_node* node = first;
                     first = first->next;
                     first->prev = nullptr;
                     node->next = nullptr;
@@ -117,11 +117,11 @@ namespace my {
 
         std::string to_string() const {
             std::stringstream ss;
-            list_node *node = first;
+            list_node* node = first;
             ss << "{";
             while (node != nullptr) {
                 ss << node->value;
-                if (node != last && last != nullptr)
+                if(node != last && last != nullptr)
                     ss << ", ";
                 node = node->next;
             }
@@ -193,4 +193,4 @@ namespace my {
     };
 }
 
-#endif //MY_LIST
+#endif//MY_LIST
