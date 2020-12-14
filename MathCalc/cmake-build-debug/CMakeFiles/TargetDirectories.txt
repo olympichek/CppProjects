@@ -1,0 +1,3 @@
+/home/olympichek/CppProjects/MathCalc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/olympichek/CppProjects/MathCalc/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/olympichek/CppProjects/MathCalc/cmake-build-debug/CMakeFiles/MathCalc.dir
