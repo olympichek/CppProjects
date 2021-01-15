@@ -12,24 +12,24 @@ namespace my {
 
         typedef std::pair<key_type, value_type> pair_type;
 
-        struct map_tree {
+        struct tree_type {
             pair_type root;
-            map_tree* left;
-            map_tree* right;
+            tree_type* left;
+            tree_type* right;
 
-            map_tree(key_type key, value_type value):
+            tree_type(key_type key, value_type value):
             root({key, value}), left(nullptr), right(nullptr) {}
 
-            explicit map_tree(const pair_type &pair):
+            explicit tree_type(const pair_type &pair):
             root(pair), left(nullptr), right(nullptr) {}
 
-            ~map_tree() {
+            ~tree_type() {
                 delete left;
                 delete right;
-            };
+            }
         };
 
-        map_tree* tree;
+        tree_type* tree;
         std::size_t length;
 
     public:
@@ -49,7 +49,7 @@ namespace my {
             return length;
         }
 
-        value_type& at(key_type key, map_tree* current_tree) {
+        value_type& at(key_type key, tree_type* current_tree) {
             std::string error = "There is no element with this key...";
             if(current_tree == nullptr)
                 throw std::out_of_range(error);
@@ -66,9 +66,9 @@ namespace my {
             return at(key, tree);
         }
 
-        void insert(const pair_type &pair, map_tree* &current_tree) {
+        void insert(const pair_type &pair, tree_type* &current_tree) {
             if(current_tree == nullptr) {
-                current_tree = new map_tree(pair);
+                current_tree = new tree_type(pair);
                 return;
             }
             if(pair.first > current_tree->root.first) {
@@ -86,14 +86,15 @@ namespace my {
             length++;
         }
 
-//        value_type& operator[](const key_type &key) {
-//            try {
-//                return at(key);
-//            }
-//            catch(std::out_of_range &e) {
-//                insert({key, });
-//            }
-//        }
+        value_type& operator[](const key_type &key) {
+            try {
+                return at(key);
+            }
+            catch(std::out_of_range &e) {
+                insert({ key, value_type() });
+                return at(key);
+            }
+        }
 
     };
 }
